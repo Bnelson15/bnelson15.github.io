@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me</title>
+</head>
+<body>
+    <center><h1>Contact Me</h1></center>
+    <form action="#" method="post" id="contactform"
+        onsubmit="alert('Not Implemented yet')"></form>
+        <div id="fdiv" >
+            <label for="myname">Name: </label><br/>
+            <input type="text" name="myname" id="myname"required> <br/><br/>
+
+            <label for="myemail">Email:</label> <br/>
+            <input type="email"name="myemail" id="myemail"required> <br/><br/>
+
+            <label for="subject"> Subject: </label> <br/>
+            <input type=" text" name="subject"id="subject"
+            placeholder="cs101" required><br/><br>
+
+            <textarea name="tbody" id="tbody" placeholder="enter message..."
+            required></textarea><br/> <br/>
+
+            <label for="priority">priority  </label><br/><br>
+            <select name="priority" id="priority" required>
+                <option disabled selected value> --select an option--</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">high</option>
+                <option value="critical">Critical</option>
+
+            </select><br/></br>
+            <label for="attatch">attatchments:</label><br/>
+            <input type="file" name="attatch"id="attach"> <br/><br/>
+
+            <label for="flwup"> do you want a follow up email?</label><br/>
+            <input type="radio" name="flwup" id="flwupy" value="yes"/>
+            <label for="flwupy" class="flwlb">yes</label>
+            <label type="radio" name="flwup" id="flwupn" value="no"/>
+            <label for="flwupn" class="flwlbl">no</label>   
+            <input type="submit" value="submit" id="sbutton"/>
+        </div>
+
+
+</body>
+</html>
