@@ -1,4 +1,9 @@
-* {font-family:georgia}
+* { 
+    font-family:georgia}
+
+body {
+        background-image:url("silverware.jpg");
+      }
 
 h1, h2 {
     color: #A4A400; 
@@ -9,8 +14,16 @@ h5  {
     color: #A4A400;
     text-decoration:underline;
 }
-h6 {background:  #FFFFA8 }
+h4 {
+    
+    font-style:italic;
+    font-size:10px;
+    background:  #FFFFA8
+ }
 a{ 
     color:#A4A400;
     text-decoration:underline;
+}
+h6{ 
+    font-family:monospace;
 }
