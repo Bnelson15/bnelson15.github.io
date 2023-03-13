@@ -9,7 +9,7 @@ table, th, td {
   border: 2px solid rgb(0, 102, 255);
   border-collapse: collapse;
 }
-#Woods {
-  
-  object-fit:scale-down;
+#img{
+  max-height:100%; 
+  max-width:100%
 }
