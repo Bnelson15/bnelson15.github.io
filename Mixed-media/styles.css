@@ -1,7 +1,33 @@
+*{
+  font-size:15px;
+  font-family:cursive;
+}
 body 
 { margin:0;padding:0; 
   background: rgb(33,27,221);
-  background: radial-gradient(circle, rgba(33,27,221,1) 0%, rgba(106,93,212,1) 100%);
+  background: radial-gradient(circle, rgba(33,27,221,1) 50%, rgba(106,93,212,1) 100%);
+}
+table{
+  margin-right:20px;
+  margin-left:20px;
+  margin-top:20px;
+  margin-bottom:20%;  
+}
+
+img{
+  width:150px;
+  height:150px;
+  }
+
+  img, video{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+video{
+  width:200px;
+  height:200px;
 }
 
 table, th, td {
@@ -9,8 +35,20 @@ table, th, td {
   border: 2px solid rgb(255, 102, 0);
   border-collapse: collapse;
   color:white;
+  padding:10px;
 }
 p {
  color:white; 
+ text-align:center;
  
+}
+h1, ul, li, a{
+  text-align:center;
+  color:white;
+
+}
+
+ul {
+  list-style-position: inside;
+  text-align: center;
 }
