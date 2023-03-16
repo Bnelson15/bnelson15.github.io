@@ -52,3 +52,9 @@ ul {
   list-style-position: inside;
   text-align: center;
 }
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
