@@ -11,16 +11,17 @@
     <form action="/action_page.php" >
         <div class="container">
             <h1> Sign Up</h1>
-    <p> Its free and always will be.</p>
+    <h5> Its free and always will be.</h5>
     
 <input type="text" placeholder="First Name" name="First Name"size="10"required>
 <input type="text" placeholder="Last Name" name="Last Name" size="10"required> <br/>
-<input type="text" placeholder= "Email" name="email" size="26"required><br/>
+<input type="text" placeholder= "Your Email" name="email" size="26"required><br/>
 <input type="text" placeholder="Re-enter Email" name="email-repeat" size="26" required> <br/>
-<input type="password" placeholder="Enter Password" name="psw" required>
+<input type="password" placeholder="New Password" name="psw" required>
+
 <label for="birthday" id="birthday"></label><br/>
 <select name="birthday "id="birthday">
-    <option disabled selected value> Month</option>
+    <option disabled selected value required>Month</option>
     <option value="january">January</option>
     <option value="february">February</option>
     <option value="March">March</option>
@@ -68,7 +69,13 @@
     <option value="30">30</option>
     <option value="31">31</option>
     </select>
-    <input type="text" placeholder="YYYY" name="Year" required><br/>
+    <input type="text" placeholder="YYYY" name="Year" required size="5">
+    <a href=”#”>Why do I need to provide my Birthday?</a><br/>
+    <p>
+     <input type="radio" id="html" name="fav_language" value="HTML">
+     <label for="male">Male</label><br>
+
+
 </form>
     <hr>
 
