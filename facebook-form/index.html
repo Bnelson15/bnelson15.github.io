@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +15,16 @@
             <h1> Sign Up</h1>
     <h5> Its free and always will be.</h5>
     
-<input type="text" placeholder="First Name" name="First Name"size="10"required>
-<input type="text" placeholder="Last Name" name="Last Name" size="10"required> <br/>
-<input type="text" placeholder= "Your Email" name="email" size="26"required><br/>
-<input type="text" placeholder="Re-enter Email" name="email-repeat" size="26" required> <br/>
-<input type="password" placeholder="New Password" name="psw" required>
+<input type="text" placeholder="First Name" name="First Name"required><br/>
+<input type="text" placeholder="Last Name" name="Last Name" required> <br/>
+<input type="text" placeholder= "Your Email" name="email" required><br/>
+<input type="text" placeholder="Re-enter Email" name="email-repeat"  required> <br/>
+<input type="password" placeholder="New Password" name="psw" required><br/>
 
-<label for="birthday" id="birthday"></label><br/>
-<select name="birthday "id="birthday">
+
+
+<label for="birthday" id="birthday"><h5>Birthday</h5></label><br/>
+<select name="month "id="month">
     <option disabled selected value required>Month</option>
     <option value="january">January</option>
     <option value="february">February</option>
@@ -34,8 +38,7 @@
     <option value="october">October</option>
     <option value="November">November</option>
     <option value="December">December</option></select>
-<label for="birthday" id="birthday"></label><br/>    
-<select name="birthday" id="birthday">
+<select name="day" id="day">
     <option disabled selected value>Day</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -69,12 +72,15 @@
     <option value="30">30</option>
     <option value="31">31</option>
     </select>
-    <input type="text" placeholder="YYYY" name="Year" required size="5">
-    <a href=”#”>Why do I need to provide my Birthday?</a><br/>
+    <input type="text" placeholder="YYYY" name="Year" required size="5"><h6><a href=”#”>Why do I need to provide my Birthday?</a></h6><br/>
     <p>
      <input type="radio" id="html" name="fav_language" value="HTML">
-     <label for="male">Male</label><br>
-
+     <label for="Female">Female</label>
+     <input type="radio" id="html" name="fav_language" value="HTML">
+     <label for="male">Male</label>
+     <h6> By Clicking sign up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Use policy</a>, including  our <a href="#">Cookie Use</a></h6>
+     <button type="btn" class="btn btn-success">Sign up</button>
+     
 
 </form>
     <hr>
