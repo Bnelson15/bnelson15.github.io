@@ -4,11 +4,8 @@
     border-style:double;
     border-color:#edf0f5;
     
+    
 }
-
-form{ 
-    background-color:#edf0f5;
-   }
 
 h6{font-size:10px}
 
@@ -28,3 +25,42 @@ h5{
 #month {width:75px;}
 #day {width:50px;}
 
+#wrapper
+{
+ width:500px;
+ height:500px;
+ margin:0 auto;
+ background:#edf0f5;
+ position:absolute;
+ left:50%;
+ top:50%;
+ margin-left:-250px;
+ margin-top:-250px;
+}
+
+input[name="First-Name"] {
+    width:50%;
+    margin-top:1%;
+    margin-bottom:1%
+    
+ }
+input[name="Last-name"] {
+    width:49%;
+    margin-top:1%;
+    margin-bottom:1%;
+ 
+ }
+input[name="email"] {
+   width:104%;
+   margin-top:1%;
+   margin-bottom:1%
+}
+input[name="email-repeat"] {
+    width:104%;
+    margin-top:1%;
+    margin-bottom:1%
+ }
+ input[name="psw"] {
+    width:104%;
+    margin-top:1%;
+    margin-bottom:1%}
