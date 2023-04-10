@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog52a</title>
+</head>
+<body>
+
+    <label for="len">length:</label>
+    <input type="number" id="len" name="len">
+
+    <label for="Wid">Width:</label>
+    <input type="number" id="wid" name="wid"><br>
+
+    <button onclick="var length = document.getelementbyid('len').value;
+    var width =document.getelementbyid('wid').value;
+    var area = length * width;
+    var perim = 2* length + 2*width;
+    alert('area:' + area + 'perimeter:' +perim);
+">
+        Calculate Area And Perimeter
+    </button>
+
+    <script>
+        // var length = 143;
+        // var width =82;
+        // var area = length * width;
+        // var perim = 2* length + 2*width;
+        // document.writeln("area:" + area + "perimeter:" +perim);
+
+    </script>
+</body>
+</html>
