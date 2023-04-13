@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prog93a</title>
+</head>
+<body>
+    <label for="KWH">Amount of KWH used</label>
+    <Input type="Number" id="kwh" name="kwh">;
+    <button onclick="calculate();">Calculate</button>
+    <p> C O M P S C I Electric</p> <hr>
+    <p id="output"></p><hr>
+    <p id="output"></p>
+
+    <script>
+        function calculate( ) {
+            var kwh= number(document.getelementbyid(kwh));
+            var rate = kwh * 4.75;
+            var surcharge= rate*.1;
+            var citytax= rate*.03;
+            var total= rate+ surcharge+ citytax;
+            var totallate= total*.04 +total;
+
+            var output= document.getelementbyid("output").value;
+            out.innertext
+        }
+    </script>
+
+    </button>
+</body>
+</html>

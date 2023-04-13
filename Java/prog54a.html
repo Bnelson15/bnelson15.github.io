@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prog54a
+    </title>
+</head>
+<body>
+    <select id="sl"> 
+        <option selected="true" disabled>1970 vw bug</option>
+        <option value="1979 firebird"> 1979 firebird</option>
+        <option value="1970 vw bug"> 1970 vw bug</option>
+        <option value="1980 suburu"> 1980 suburu</option>
+        <option value="1975 cutlass"> 1975 cutlass</option>
+    </select>
+    <button onclick="calculate();">calculate</button>
+    <p id="output"></p>
+
+    <script>
+    function calculate() {
+        var car= document.getelementbyid ("sl").value;
+        var miles= 0;
+        var gallons=0;
+        var mpg=0;
+
+        if(car == "1970 vw bug") {
+            miles=286;
+            gallons=9;
+    
+        }
+
+        if(car == "1979 firebird") {
+            miles=412;
+            gallons=40;
+    
+        }
+
+        if(car == "1980 suburu") {
+            miles=362;
+            gallons=18;
+    
+        }
+
+        if(car == "1975 cutlass") {
+            miles=161;
+            gallons=11;
+    
+        }
+
+        mpg= miles/gallons;
+        var out = document.getelementbyid("output");
+        out.innertext="mpg" + mpg.tofixed(2);
+    }
+    </script>
+</body>
+</html>
