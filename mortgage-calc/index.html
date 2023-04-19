@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mortgage-calc></title>
+    <title>Mortgage Balance Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+
 </head>
 <body>
-    <form>
+
         <label for="principal"> Principle</label>
         <input typ="number" id="principle" name="principle"><br>
         <label for="interest"> Intrest Rate as % (e.g 7.9):</label>
@@ -17,24 +20,8 @@
         <label for="monthy payment"> Monthly Payment</label>
         <input type="number" id="payment" name="monthly payment">
         <p id="out"></p>
-        <button onclick="Calculate();">Calculate</button>
-        <button onclick="Reset();">Reset</button>        
-    <script>  
+        <button id="Calculate" onclick="Calculate();"><b>Calculate</b></button>
+        <button id="reset" onclick="Reset();"><b>Reset</b></button>        
     
-                function reset() {
-                    var p =document.getElementById("out");
-                p.innertext="";
-                }
-                
-                function calculate() {
-                var Principal= Number(document.getelementbyid('principle').value);
-                var interest= Number(document.getelementbyid('interest').value);
-                var years= Number(document.getelementbyid('years').value);
-                var Payment= Number(document.getelementbyid('Payment').value);
-                var out= Principal * Interest * Years * Payment; }
-               
-                
-    </script>
-    </form>
 </body>
 </html>
