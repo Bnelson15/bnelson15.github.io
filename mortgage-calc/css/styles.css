@@ -1,14 +1,12 @@
 body{
     background-color:rgb(182, 199, 248);
-    margin-top:50%;
-    margin-left:20%;
-    margin-right:20%;
-    margin-bottom:50%;
+   margin:25%;
 }
 
 input{
     border:1px;
     background-color: rgb(173, 173, 173);
+    
 }
 
 #Calculate{
@@ -25,4 +23,10 @@ border-radius:2px;
     color:rgb(0, 110, 255);
     border: 4px;
     border-radius:2px;
+}
+
+.input{
+    width:70px;
+    text-align: center;
+   
 }

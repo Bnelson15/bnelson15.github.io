@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prog122h</title>
+</head>
+<body>
+    <p id="out"></p>
+    <script>
+        var msg = "Number &emsp; Square &emsp; Square root &emsp; Cube &emsp; 4th root <br>";
+        for(var lcv=1; lvc<21; lcv++){
+            var square = lcv**2;
+            var sqrt= math.sqrt (lcv);
+            var cube= lcv**3;
+            var frthrt = math.frthrt(lcv);
+            msg+= lcv+ "&emsp; &emsp; &emsp;"+ square + "&emsp; &emsp; &emsp;"+ 
+            sqrt.toFixed(4)+ "&emsp; &emsp; &emsp;" + cube +  "&emsp; &emsp; &emsp;" + frthrt.toFixed(4) + "<br>";
+
+        }
+        document.getElementById("out").innerHTML=msg;
+        
+    </script>
+</body>
+</html>
