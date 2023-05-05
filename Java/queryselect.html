@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Test 1</li>
+        <li>Test 2</li>
+        <li>Test 3</li>
+    </ul>
+
+    <h1 class="test">Heading 1</h1>
+    <h1 class="test">Heading 2</h1>
+    <h1 class="test">Heading 3</h1>
+
+    <script>
+        var h1=document.queryselector(".test");
+        h1.innerHTML="updated heading";
+
+        var p = document.queryselector("#wow");
+        p.textcontent="paragraph";
+        
+        var hOneall=document.queryselectorAll(".test");
+        for(var lcv=0; lcv<hOneall.length; lcv++){
+            hOneall[lcv].style.backgroundcolor="green";
+
+        }
+
+        var hOneall=document.getElementsByClassName("test" );
+        for(var lcv=0; lcv<hOneall.length; lcv++){
+            hOneall[lcv].style.color="white";}
+
+            var lis = document.queryselectorall("li");
+            for(var lcv=0; lcv<hOneall.length; lcv++){
+            lis[lcv].style.color="purple";}
+
+
+
+    </script>
+</body>
+</html>

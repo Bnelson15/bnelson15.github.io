@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notes js </title>
+</head>
+<body>
+   <script>
+    var hotel={
+        name:"holiday inn",
+        rooms:50,
+        booked:30,
+        checkavalible:function(){
+            return this.rooms-this.booked;
+        }
+    };
+
+    document.write(hotel["name"]+"<br>");
+    document.write(hotel.name+"<br>");
+    document.write("rooms:"+ hotel.rooms+"<br>");
+    document.write("avalible:" +hotel.checkavalible()+"<br>");
+
+    function Hotel(name,rooms,booked){
+        this.name=name;
+        this.rooms=rooms;
+        this.booked=booked;
+        this.checkavalible=function(){
+            return this.rooms-this.booked;
+        }
+    }
+    var hotel2=new Hotel("microtel",25,5);
+    document.write("name:"+hotel2.name +"<br>");
+    document.write("rooms avalible"+ hotel2.checkavalible()+"<br>");
+
+   </script> 
+</body>
+</html>

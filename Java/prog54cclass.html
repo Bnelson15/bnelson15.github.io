@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="number" id="rad" name="rad">
+   <button onclick="doMath()">calculate</button>
+   <p id="out"></p>
+
+   <script>
+    class Circle{
+        constructor(radius){
+            this.radius=radius;
+            this.Pi=3.14159;
+            this.area=0;
+            this.circumference=0;
+
+        }
+        calc(){
+
+        }
+        getarea(){
+
+        }
+        getcircumference(){}
+    }
+    function doMath(){
+        var rad=Number(document.getElementById("rad").value);
+        var circ=new Circle(rad);
+        circ.calc();
+        document.getElementById("out").innerHTML=
+        "area:" + circ.getarea()+"<br>circumference:"
+        +circ.getcircumference()+"<br>";
+    }
+   </script>
+</body>
+</html>
