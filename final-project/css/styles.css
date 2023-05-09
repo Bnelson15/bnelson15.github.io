@@ -1,0 +1,23 @@
+
+    
+    
+   
+
+body{
+    background-image:url("..//mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:black;
+    font-family:cursive;
+}
+
+h1{
+    text-align: center;
+    color:rgb(221, 75, 136);
+}
+
+a{
+    color:rgb(221, 75, 136);
+   
+}
+
