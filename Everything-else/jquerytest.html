@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p id="test1">paragraph</p>
+    <p id="test2">paragraph 2</p>
+    <p> input field:
+        <input type="text" id="test3" value="placeholder">
+
+    </p>
+
+    <button id="btn1">set text</button>
+    <button id="btn2">set html</button>
+    <button id="btn3">set value</button>
+    <button id="btn4">append text</button>
+
+    <p id="gtest">Some <b>Bold</b>text</p>
+
+    <button id="gbtn1">show text</button>
+    <button id="gbtn2">show html</button>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <button id="lbtn">append list item</button>
+
+    <div style="background:green; width:100px; height:100px; position:absolute;" >
+    
+    </div>
+    <button id="abtn">run animation</button>
+
+    <script>
+        $(document).ready(function(){
+            //all your code goes in document.ready
+            $("#btn1").click(function(){
+                $("#test1").text("hello world");
+            
+            });
+            $("#btn2").click(function(){
+                $("#test2").html("<b>hello world</b>");
+            
+            });
+            $("#btn3").click(function(){
+                $("#test3").val("abc123");
+            
+            });
+
+            $("#gbtn1").click(function(){
+               alert("text:"+$("#gtest").text()
+               );
+            });
+            $("#gbtn2").click(function(){
+               alert("text:"+$("#gtest").html()
+               );
+            });
+
+            $("#btn4").click(function(){
+                $("p").append("<b>append text</b>");
+            
+            });
+            $("#lbtn").click(function(){
+                $("ol").append("<li>append items</li>");
+            
+            });
+            $("#abtn").click(function(){
+                $("idv").animate({left:'250px'});
+                $("div").fadeOut(3000);
+            
+            });
+
+
+            
+        });
+    </script>
+    
+</body>
+</html>
+
