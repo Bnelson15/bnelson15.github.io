@@ -35,3 +35,8 @@ position: absolute; bottom:30pt; left: 100pt;
 #projects{
 position: absolute; bottom: 30pt; right: 100pt;
 }
+
+.header{
+    color:white;
+    text-align:center;
+}
