@@ -2,8 +2,11 @@
     
     
    
+div{
+    margin:0%;
+}
 
-h1{padding:30%;}
+h1{padding:20%;}
 
 h1, h2{
         text-align: center;
@@ -17,18 +20,9 @@ h3{
     text-align: center;
 }
 
-a{
+a, p{
     color:rgb(255, 255, 255);
 
-}
-
-#about{
-position: absolute; top:30pt; left: 100pt;
-
-}
-
-#projects{
-position: absolute; top: 30pt; right: 100pt;
 }
 
 
@@ -37,7 +31,7 @@ position: absolute; top: 30pt; right: 100pt;
     
       
         /* Set a specific height */
-        min-height: 500px;
+        min-height:200px;
       
         /* Create the parallax scrolling  */
         background-image:url("..//mountain.jpg");
@@ -47,3 +41,43 @@ position: absolute; top: 30pt; right: 100pt;
         background-size: cover;
 }
 
+input {
+  width:110px; 
+  background-color:rgb(163, 162, 162);
+  color:white;
+  border-width:1px;
+  border-color:rgb(255, 255, 255);
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+ .button{
+    text-align:center;
+
+ }
+ label{
+    color:white;
+ }
+ footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.363);
+    color: rgb(255, 255, 255);
+  }
+  ul {
+   
+    position: absolute; top: 30pt; left:40%;
+    list-style-type:none;
+  }
+  
+  li {
+    float:left;
+  }
+  
+  li a {
+    display:block;
+    padding: 8px;
+    background-color: #00000057;
+  }

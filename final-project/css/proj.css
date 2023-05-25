@@ -33,4 +33,25 @@ a, th{
     margin-right: auto;
     margin-top:10%;
 }
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.363);
+    color: rgb(255, 255, 255);
+  }
+  ul {
+   
+    position: absolute;  left:40%;
+    list-style-type:none;
+  }
+  
+  li {
+    float:left;
+  }
+  
+  li a {
+    display:block;
+    padding: 8px;
+    background-color: #00000057;
+  }
 

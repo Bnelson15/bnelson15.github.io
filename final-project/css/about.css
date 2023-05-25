@@ -7,10 +7,32 @@ body{
     font-family:cursive;}
 
 p {
-color:white ;   
+color:rgb(0, 0, 0) ;   
 }
 
 h2 {  
-      color:rgb(235, 43, 123);
+      color:rgb(255, 255, 255);
 }
 
+footer {
+    text-align: center;
+    
+    background-color: rgba(0, 0, 0, 0.363);
+    color: rgb(255, 255, 255);
+    position:absolute;  left:45%;
+  }
+  ul {
+   
+    position: absolute; top: 30pt; left:40%;
+    list-style-type:none;
+  }
+  
+  li {
+    float:left;
+  }
+  
+  li a {
+    display:block;
+    padding: 8px;
+    background-color: #00000057;
+  }
