@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('Your submission has been processed...');
+    });
+</script>
+    
    
 </head>
 
@@ -24,14 +32,14 @@
   <p> I am able to develop software, applications, or computer systems to meet my client's specifications and satisfaction. I pride myself on delivering projects on time and to any and all standards the client needs from me. </p><hr>
   <h3>Contact me</h3><br> 
   <div class="container">
-    <form id="myForm" onsubmit="return ajaxpost()">
+    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfbsSzerQl8q22aH5K4dsFtrw-hl-El0mw4hC6yJKGEjiaIPw/formResponse?usp=pp_url&entry.1758519410=Billybob&entry.723639013=Why+you+have+the+best+website" target="hidden_iframe" onsubmit="submitted=true;">
               
     <table>    
       <tr>
       <td><label for="name">Your name:</label></td>
-      <td><input type="text" id="name" name="firstname" placeholder="First name.."> <td></tr>
+      <td><input type="text" name="entry.1758519410" id="entry.1758519410" placeholder="First name.."> <td></tr>
       <tr> <td><label for="subject">Subject:</label></td>
-      <td> <input type="text" id="subject" name="subject" placeholder="Your message.."></input></td></tr>
+      <td> <input type="text" id="entry.723639013" name="entry.723639013" placeholder="Your message.."></input></td></tr>
     </table>
     <div
      class="button"><input id="submit" type="submit" value="Submit">
@@ -43,6 +51,7 @@
     </footer>
  
    </form>
+   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
    </div>
    </div>
         
