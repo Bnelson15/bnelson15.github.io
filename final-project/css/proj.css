@@ -2,10 +2,11 @@
 body{
     background-image:url("..//mountain.jpg");
     background-size:cover;
-    background-position:center center;
-    background-repeat: no-repeat;
+    background-position:center ;
+    background-repeat:repeat-x;
     overflow-x: hidden;
     overflow-y: scroll;
+   
     
 }
 table {
@@ -51,6 +52,8 @@ li a {
 }
 
 footer{
+  width:1350px;
+  position:fixed; bottom:5px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.363);
   color: rgb(255, 255, 255);
@@ -61,5 +64,18 @@ footer{
 #author, a{
   color:white;
   text-align: center;
+}
+
+.btn1{
+  position:fixed; left: 45%; top:75px; 
+  width:50px;
+  text-align: center;
+
+}
+.btn2{
+  position:fixed; left: 50%;top:75px;
+  width:50px;
+  text-align: center;
+  padding-left:2px;
 }
 
