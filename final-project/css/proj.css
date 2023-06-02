@@ -79,3 +79,7 @@ footer{
   padding-left:2px;
 }
 
+#contentContainer {
+  display:none;
+  
+}
