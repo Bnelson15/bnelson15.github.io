@@ -66,20 +66,19 @@ footer{
   text-align: center;
 }
 
-.btn1{
-  position:fixed; left: 45%; top:75px; 
-  width:50px;
-  text-align: center;
 
-}
-.btn2{
-  position:fixed; left: 50%;top:75px;
-  width:50px;
-  text-align: center;
-  padding-left:2px;
-}
-
-#contentContainer {
+#tableContainer {
   display:none;
   
+}
+#showbutton{
+  padding:8px;
+  position:fixed;
+  top:70px;
+  left:46%;
+  border-width: 1px;
+  border-color:  white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.363);
+  color: rgb(255, 255, 255);
 }

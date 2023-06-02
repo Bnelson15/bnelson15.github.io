@@ -1,5 +1,10 @@
-document.getElementById('showbutton').addEventListener('click', function() {
-var contentContainer = document.getElementById('contentContainer');
-if (contentContainer.style.display==='none')
-{contentContainer.style.display = 'block';}
-else {contentContainer.style.display='none';}});
+function toggleTable(){
+    var tableContainer = 
+document.getElementById('tableContainer');
+    if (tableContainer.style.display
+==='' || tableContainer.style.display
+=== 'table') {
+      tableContainer.style.display=
+      'table';
+     }
+}
