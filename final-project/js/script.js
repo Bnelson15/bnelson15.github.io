@@ -7,6 +7,7 @@ $(document).ready(function(){
       $("table").slideDown();
     });
   });
+
   function submitForm() {
     var name = document.getElementById("name").value;
     var message = document.getElementById("message").value;
@@ -29,11 +30,9 @@ $(document).ready(function(){
     if (isValid) {
       // Clear text from textboxes
       document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
       document.getElementById("message").value = "";
 
-      // Display "Submitted" message
-      alert("Submitted");
+    alert("Submitted");
     } else {
       alert("Form is not valid. Please fill in all the required fields.");
     }

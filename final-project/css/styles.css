@@ -82,5 +82,6 @@ table{
     background-color: #00000057;
   }
   #message{
-    background-color:rgb(163, 162, 162)
+    background-color:rgb(163, 162, 162);
+    color:white;
   }
