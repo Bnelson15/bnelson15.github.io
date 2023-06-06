@@ -67,11 +67,11 @@ footer{
 }
 
 
-#tableContainer {
+#myTable {
   display:none;
   
 }
-#showbutton{
+#myButton{
   padding:8px;
   position:fixed;
   top:70px;
