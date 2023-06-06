@@ -1,6 +1,9 @@
 
     
-    
+ body{
+  font-family:cursive;
+  color:white;
+ }   
    
 div{
     margin:0%;
@@ -84,4 +87,5 @@ table{
   #message{
     background-color:rgb(163, 162, 162);
     color:white;
+    border-color:white;
   }
